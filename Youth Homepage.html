@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graceway Adventist Fellowship</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Image of Graceway Adventist Fellowship -->
+    <img src="your-image-url" alt="Graceway Adventist Fellowship">
+
+    <h3>Graceway Adventist Fellowship</h3>
+
+    <!-- Navigation Bar -->
+    <div class="nav">
+        <a href="https://www.GracewayAdventist.com/updates">Updates</a>
+        <a href="https://www.GracewayAdventist.com/upcoming-events">Upcoming Events</a>
+        <a href="https://www.GracewayAdventist.com/youth">Youth</a>
+        <a href="https://www.GracewayAdventist.com/senior">Senior</a>
+        <a href="https://www.GracewayAdventist.com/youngadult">Young Adult</a>
+        <a href="https://www.GracewayAdventist.com/all">All</a>
+        <a href="https://www.GracewayAdventist.com/highdemand">High Demand</a>
+    </div>
+
+    <!-- Youth Section -->
+    <h4>Youth</h4>
+    <h5>Activities</h5>
+
+    <!-- Filter Controls (Pseudocode logic) -->
+    <div id="filters">
+        <label for="age-range">Age Range:</label>
+        <select id="age-range" onchange="applyFilters()">
+            <option value="all">All Ages</option>
+            <option value="under-5">Kids Under 5yrs</option>
+            <option value="7-12">Kids Ages 7-12</option>
+            <option value="13-17">Youth Age 13-17</option>
+        </select>
+        <br/>
+
+        <label for="activity-type">Activity Type:</label>
+        <select id="activity-type" onchange="applyFilters()">
+            <option value="all">All Activities</option>
+            <option value="choir">Kids Choir</option>
+            <option value="sermon">Kids Sermon</option>
+        </select>
+    </div>
+
+    <!-- Activity List -->
+    <ul id="activity-list">
+        <li class="activity" data-age="under-5" data-type="choir"><a href="https://www.GracewayAdventist.com/kidsunder5yrs">Kids Under 5yrs</a></li>
+        <li class="activity" data-age="7-12" data-type="choir"><a href="https://www.GracewayAdventist.com/kids7-12">Kids Ages 7-12</a></li>
+        <li class="activity" data-age="13-17" data-type="sermon"><a href="https://www.GracewayAdventist.com/youth13-17">Youth Age 13-17</a></li>
+        <li class="activity" data-age="under-5" data-type="choir"><a href="https://www.GracewayAdventist.com/kidschoir">Kids Choir</a></li>
+        <li class="activity" data-age="7-12" data-type="sermon"><a href="https://www.GracewayAdventist.com/kidssermon">Kids Sermon</a></li>
+    </ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

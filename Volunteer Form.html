@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graceway Adventist Fellowship</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="https://www.GracewayAdventist.com/updates">Updates</a>
+        <a href="https://www.GracewayAdventist.com/upcoming events">Upcoming Events</a>
+        <a href="https://www.GracewayAventist.com/youth">Youth</a>
+        <a href="https://www.GracewayAdventist.com/senior">Senior</a>
+        <a href="https://www.GracewayAdventist.com/youngadult">Young Adult</a>
+        <a href="https://www.GracewayAdventist.com/all">All</a>
+        <a href="https://www.GracewayAdventist.com/highdemand">High Demand</a>
+    </div>
+
+    <!-- Page Header -->
+    <h3>Graceway Adventist Fellowship</h3>
+
+    <!-- Volunteer Form -->
+    <h4>Volunteer Form</h4>
+    <form id="volunteer-form" action="mailto:emandapalli1@learn.athabascau.ca" method="GET">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" required />
+        <span class="error-message" id="fname-error"></span>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" required />
+        <span class="error-message" id="lname-error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <span class="error-message" id="email-error"></span>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+        <input type="submit" value="Submit" />
+    </form>
+
+    <p>After clicking "Submit", you will be redirected to an email where the form will automatically be sent. Please email us if you have any questions.</p>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

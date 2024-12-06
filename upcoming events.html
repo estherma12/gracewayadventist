@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graceway Adventist Fellowship</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h3>Graceway Adventist Fellowship</h3>
+
+    <!-- Navigation Menu -->
+    <div class="nav">
+        <a href="https://www.GracewayAdventist.com/updates">Updates</a>
+        <a href="https://www.GracewayAdventist.com/upcoming-events">Upcoming Events</a>
+        <a href="https://www.GracewayAdventist.com/youth">Youth</a>
+        <a href="https://www.GracewayAdventist.com/senior">Senior</a>
+        <a href="https://www.GracewayAdventist.com/youngadult">Young Adult</a>
+        <a href="https://www.GracewayAdventist.com/all">All</a>
+        <a href="https://www.GracewayAdventist.com/highdemand">High Demand</a>
+    </div>
+
+    <h3>Upcoming Events</h3>
+
+    <!-- Countdown Timer -->
+    <h4>Event Countdown:</h4>
+    <p id="demo"></p>
+
+    <!-- Filters Section -->
+    <div id="filters">
+        <h4>Filter Events:</h4>
+        <label for="ageGroup">Age Group:</label>
+        <select id="ageGroup" multiple>
+            <option value="children">Children</option>
+            <option value="youth">Youth</option>
+            <option value="youngAdult">Young Adult</option>
+            <option value="senior">Senior</option>
+        </select>
+
+        <label for="weekendOnly">
+            <input type="checkbox" id="weekendOnly"> Weekend Only
+        </label>
+
+        <label for="timeframe">Timeframe:</label>
+        <select id="timeframe">
+            <option value="thisWeek">This Week</option>
+            <option value="thisMonth">This Month</option>
+            <option value="nextMonth">Next Month</option>
+        </select>
+
+        <button id="applyFilters">Apply Filters</button>
+    </div>
+
+    <!-- Event Cards -->
+    <div id="events">
+        <div class="event-card" data-age-group="senior" data-timeframe="thisMonth" data-weekend="true">
+            <h4>1. Church Potluck</h4>
+            <p>Please join us for a church potluck on the last Saturday of the month. 
+                <a href="https://www.allrecipes.com/gallery/best-church-potluck-recipes/" target="_blank">Click here</a>.
+            </p>
+        </div>
+
+        <div class="event-card" data-age-group="children,youth" data-timeframe="thisWeek" data-weekend="false">
+            <h4>2. Christmas Potluck</h4>
+            <p>Spectacular Christmas Program with Children's Play Join us on <span style="color:blue; font-weight:bold;">December 17th</span>.</p>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
